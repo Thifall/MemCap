@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Weapon" load_steps=3 format=3 uid="uid://nipvie36yoxm"]
+
+[ext_resource type="Script" path="res://Resources/Weapon.gd" id="1_pekrd"]
+[ext_resource type="Texture2D" uid="uid://fqxv8swu4gra" path="res://assets/glitch/pieceRed_multi03.png" id="2_laim1"]
+
+[resource]
+script = ExtResource("1_pekrd")
+Damage = 6
+Weapon_Name = "Knife"
+texture = ExtResource("2_laim1")

@@ -12,11 +12,11 @@ config_version=5
 
 config/name="MemCap"
 config/features=PackedStringArray("4.3", "Mobile")
-config/icon="res://icon.svg"
+config/icon="res://icon.png"
 
 [display]
 
-window/size/viewport_width=104
+window/size/viewport_width=1024
 window/size/viewport_height=768
 window/stretch/mode="canvas_items"
 
