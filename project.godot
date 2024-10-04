@@ -11,8 +11,16 @@ config_version=5
 [application]
 
 config/name="MemCap"
+run/main_scene="res://Scenes/master_scene/master_scene.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
 config/icon="res://icon.png"
+
+[autoload]
+
+ImageManager="*res://Singletons/ImageManager.gd"
+GameManager="*res://Singletons/GameManager.gd"
+SignalManager="*res://Singletons/SignalManager.gd"
+SoundManager="*res://Singletons/SoundManager.gd"
 
 [display]
 

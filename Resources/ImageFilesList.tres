@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="ImageFilesList" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="ImageFilesList" load_steps=2 format=3 uid="uid://damghwe1nsrjr"]
 
 [ext_resource type="Script" path="res://Resources/ImageFilesList.gd" id="1_vkxyq"]
 

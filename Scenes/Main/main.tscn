@@ -1,0 +1,101 @@
+[gd_scene load_steps=4 format=3 uid="uid://nya560mowkhx"]
+
+[ext_resource type="LabelSettings" uid="uid://bb475bkqlpx44" path="res://assets/LG_84_Green.tres" id="1_k2lkc"]
+[ext_resource type="PackedScene" uid="uid://8i3bm4s31fab" path="res://Scenes/levelButton/levelButton.tscn" id="2_pm66n"]
+[ext_resource type="PackedScene" uid="uid://cqldwn4jsh7yw" path="res://Scenes/front_sprite/front_sprite.tscn" id="2_pokgd"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.164706, 0.141176, 0.54902, 0.172549)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Spacer" type="Control" parent="ColorRect/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ColorRect/VBoxContainer"]
+layout_mode = 2
+text = "MEM CAP"
+label_settings = ExtResource("1_k2lkc")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Spacer2" type="Control" parent="ColorRect/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBLevels" type="HBoxContainer" parent="ColorRect/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 12
+
+[node name="LevelButton" parent="ColorRect/VBoxContainer/HBLevels" instance=ExtResource("2_pm66n")]
+layout_mode = 2
+
+[node name="LevelButton2" parent="ColorRect/VBoxContainer/HBLevels" instance=ExtResource("2_pm66n")]
+layout_mode = 2
+_levelNumber = 2
+
+[node name="LevelButton3" parent="ColorRect/VBoxContainer/HBLevels" instance=ExtResource("2_pm66n")]
+layout_mode = 2
+_levelNumber = 3
+
+[node name="LevelButton4" parent="ColorRect/VBoxContainer/HBLevels" instance=ExtResource("2_pm66n")]
+layout_mode = 2
+_levelNumber = 4
+
+[node name="LevelButton5" parent="ColorRect/VBoxContainer/HBLevels" instance=ExtResource("2_pm66n")]
+layout_mode = 2
+_levelNumber = 5
+
+[node name="LevelButton6" parent="ColorRect/VBoxContainer/HBLevels" instance=ExtResource("2_pm66n")]
+layout_mode = 2
+_levelNumber = 6
+
+[node name="Spacer3" type="Control" parent="ColorRect/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBSprites" type="HBoxContainer" parent="ColorRect/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 50
+
+[node name="FrontSprite" parent="ColorRect/VBoxContainer/HBSprites" instance=ExtResource("2_pokgd")]
+layout_mode = 2
+
+[node name="FrontSprite2" parent="ColorRect/VBoxContainer/HBSprites" instance=ExtResource("2_pokgd")]
+layout_mode = 2
+
+[node name="FrontSprite3" parent="ColorRect/VBoxContainer/HBSprites" instance=ExtResource("2_pokgd")]
+layout_mode = 2
+
+[node name="FrontSprite4" parent="ColorRect/VBoxContainer/HBSprites" instance=ExtResource("2_pokgd")]
+layout_mode = 2
+
+[node name="FrontSprite5" parent="ColorRect/VBoxContainer/HBSprites" instance=ExtResource("2_pokgd")]
+layout_mode = 2
+
+[node name="Spacer4" type="Control" parent="ColorRect/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
